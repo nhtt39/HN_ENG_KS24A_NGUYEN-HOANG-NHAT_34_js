@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="bt2.css" />
+  <body>
+    <div class="container">
+      <h2>Task Management</h2>
+      <div class="form-group">
+        <input type="text" id="content" placeholder="Content" />
+        <input type="date" id="dueDate" />
+        <select id="status">
+          <option value="Pending">Pending</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <input type="text" id="assignedTo" placeholder="Username" />
+        <button id="submitBtn">Submit</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Content</th>
+            <th>Due date</th>
+            <th>Status</th>
+            <th>Assigned to</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="taskTable">
+        </tbody>
+      </table>
+    </div>
+
+    <script src="bt2.js"></script>
+  </body>
+</html>
